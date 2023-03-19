@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -xamp
+ls -ap1 --group-directories-first | LC_ALL=C sort -df | sed ':a;N;$!ba;s/\n/, /g'; echo
