@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -xamp
+ls -1a | sort -d -f --field-separator= -k1,1n -k1.2,1
